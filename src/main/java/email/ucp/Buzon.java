@@ -18,6 +18,12 @@ public class Buzon {
     public void agregarAEnviados(Correo correo){
         bandejaEnviados.add(correo);
     }
+    public void eliminarDeEnviados (Correo correo){
+        bandejaEnviados.remove(correo);
+    }
+    public void eliminarDeEntrada (Correo correo){
+        bandejaEntrada.remove(correo);
+    }
     public List<Correo> getBandejaEntrada(){
         return bandejaEntrada;
     }
