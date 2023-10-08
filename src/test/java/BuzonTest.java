@@ -45,7 +45,20 @@ public class BuzonTest {
 
         assertFalse(buzon.getBandejaEntrada().contains(correo));
     }
+
+ @Test
+    public void testEliminarCorreoDeEnviados(){
+        Buzon buzon = new Buzon ();
+        Contacto remitente = new Contacto ("Sebastiano Corradi", "Sebasitanocorradi57@gmail.com");
+        Correo correo = new Correo ("Asunto del Correo", "Contenido del Correo",remitente, null);
+        
+        buzon.agregarAEnviados(correo);
+        buzon.eliminarDeEnviados(correo);
+
+        assertFalse(buzon.getBandejaEnviados().contains(correo));
+    }
 }
+
     
 
     
