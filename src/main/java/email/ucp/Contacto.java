@@ -3,19 +3,19 @@ package email.ucp;
 public class Contacto {
     public Contacto(String name, String mail) {
         super();
-        setName(name);
+        setNombre(name);
         setMail(mail);
     }
 
     String name;
     String mail;
 
-    //           INICIO ENCAPSULACION           //
-    public void setName(String name) {
+    //                  ENCAPSULACION                        //
+    public void setNombre(String name) {
         this.name = name;
     }
 
-    public String getName() {
+    public String getNombre() {
         return name;
     }
 
@@ -26,5 +26,5 @@ public class Contacto {
     public String getMail() {
         return mail;
     }
-    //           FIN ENCAPSULACION           //
+    //                FIN DE ENCAPSULAMIENTO             //
 }
