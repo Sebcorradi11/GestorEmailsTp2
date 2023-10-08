@@ -21,15 +21,14 @@ public class Correo {
     return asunto;
    }
     public String getContenido() {
-    return asunto;
+    return contenido;
    }
    
-    public String getRemitente() {
-    return asunto;
+    public Contacto getRemitente() {
+    return remitente;
    }
    public List<Contacto> getDestinatarios(){
     return destinatarios;
    }
    
-
 }
