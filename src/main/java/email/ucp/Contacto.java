@@ -9,6 +9,7 @@ public class Contacto {
 
     String name;
     String mail;
+    private Buzon buzon;
 
     //                  ENCAPSULACION                        //
     public void setNombre(String name) {
@@ -25,6 +26,12 @@ public class Contacto {
 
     public String getMail() {
         return mail;
+    }
+    public Buzon getBuzon() {
+        return buzon;
+    }
+    public void setBuzon (Buzon buzon){
+        this.buzon = buzon;
     }
     //                FIN DE ENCAPSULAMIENTO             //
 }
