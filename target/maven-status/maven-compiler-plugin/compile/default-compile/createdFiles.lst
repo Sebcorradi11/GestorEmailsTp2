@@ -1,0 +1,6 @@
+email\ucp\Contacto.class
+email\ucp\EnviarCorreo.class
+email\ucp\FiltroAsuntoRemitente.class
+email\ucp\Buzon.class
+email\ucp\Correo.class
+email\ucp\FiltroAsunto.class
