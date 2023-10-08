@@ -3,10 +3,16 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class EnviarCorreo {
-    public static void enviar (Correo correo, Buzon buzonRemitente, List<Buzon> buzonesDestinatarios){
-    buzonRemitente.agregarAEnviados(correo);
-    for (Buzon buzonDestinatario : buzonesDestinatarios){
+    public static void enviar(Correo correo, Buzon buzonRemitente, Buzon buzonDestinatario) {
+        if (correo == null || buzonRemitente == null || buzonDestinatario == null) {
+            throw new IllegalArgumentException("Correo, buzonRemitente y buzonDestinatario no pueden ser nulos.");
+        }
+
+        if (!buzonRemitente.getBandejaEnviados().contains(correo)) {
+            throw new IllegalArgumentException("El correo no está en la bandeja de enviados del buzonRemitente.");
+        }
+
+        buzonRemitente.eliminarDeEnviados(correo);
         buzonDestinatario.agregarAEntrada(correo);
     }
-    }   
 }
