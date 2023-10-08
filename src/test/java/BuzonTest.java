@@ -22,8 +22,18 @@ public class BuzonTest {
             assertTrue(buzon.getBandejaEntrada().contains(correo));
         }
 
-    }
+    @Test
+       public void testAgregarCorreoAEnviados(){
+        Buzon buzon = new Buzon();
+            Contacto remitente = new Contacto ("Sebastiano Corradi", "Sebasitanocorradi57@gmail.com");
+            Correo correo = new Correo ("Asunto del Correo", "Contenido del Correo",remitente, null);
 
+            buzon.agregarAEnviados(correo);
+            
+            assertTrue(buzon.getBandejaEnviados().contains(correo));
+        }
+
+    }  
     
 
 
