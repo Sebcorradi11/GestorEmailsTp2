@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>email.ucp</groupId>
-	<artifactId>Tp2-Email</artifactId>
+	<artifactId>tp2-gestoremal</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
