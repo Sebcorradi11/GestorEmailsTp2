@@ -1,7 +1,11 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-email,email.ucp,Contacto,23,0,0,0,10,0,5,0,5,0
-email,email.ucp,Correo,3,0,0,0,1,0,1,0,1,0
-email,email.ucp,FiltroAsunto,3,0,0,0,1,0,1,0,1,0
-email,email.ucp,FiltroAsuntoRemitente,3,0,0,0,1,0,1,0,1,0
-email,email.ucp,Buzon,3,0,0,0,1,0,1,0,1,0
-email,email.ucp,EnviarCorreo,3,0,0,0,1,0,1,0,1,0
+email,email.ucp,Contacto,0,30,0,0,0,13,0,7,0,7
+email,email.ucp,Correo,0,27,0,0,0,10,0,5,0,5
+email,email.ucp,FiltroAsunto,0,21,0,0,0,6,0,3,0,3
+email,email.ucp,FiltroAsuntoContenido,0,34,1,3,0,7,1,4,0,3
+email,email.ucp,FiltroRemitente,0,21,0,0,0,6,0,3,0,3
+email,email.ucp,Main,91,0,4,0,17,0,4,0,2,0
+email,email.ucp,FiltroContenido,0,21,0,0,0,6,0,3,0,3
+email,email.ucp,FiltroAsuntoRemitente,0,34,1,3,0,7,1,4,0,3
+email,email.ucp,Buzon,0,43,0,0,0,14,0,7,0,7
+email,email.ucp,EnviarCorreo,13,18,4,4,3,5,5,1,1,1
