@@ -1,12 +1,10 @@
 import static org.junit.Assert.*;
-
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.Test;
-
 import email.ucp.Contacto;
 import email.ucp.Correo;
-import email.ucp.FiltroAsuntoRemitente;
+
 
 
 public class CorreoTest {
@@ -20,7 +18,7 @@ public class CorreoTest {
         List<Contacto> destinatarios = new ArrayList<>();
         destinatarios.add(destinatario1);
         destinatarios.add(destinatario2);
-
+        //Crea un correo
         Correo correo = new Correo("Asunto del Correo", "Contenido del Correo", remitente, destinatarios );
 
         assertEquals("Asunto del Correo", correo.getAsunto());

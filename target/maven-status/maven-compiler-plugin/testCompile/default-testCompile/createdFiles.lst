@@ -1,5 +1,9 @@
 BuzonTest.class
-ContactoTest.class
-FiltroAsunto.class
-FiltroAsuntoRemitente.class
+EnviarCorreoTest.class
+FiltroAsuntoTest.class
 CorreoTest.class
+ContactoTest.class
+FiltroRemitenteTest.class
+FiltroContenidoTest.class
+FiltroAsuntoRemitenteTest.class
+FiltroAsuntoYContenidoTest.class

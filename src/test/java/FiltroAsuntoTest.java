@@ -5,7 +5,6 @@ import email.ucp.FiltroAsunto;
 import email.ucp.Correo;
 import java.util.ArrayList;
 import java.util.List;
-import email.ucp.Buzon;
 import email.ucp.Contacto;
 
 public class FiltroAsuntoTest {
