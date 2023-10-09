@@ -2,6 +2,8 @@ package email.ucp;
 import java.util.List;
 
 public class Correo {
+
+    //                         INICIO DE ENCAPSULAMIENTO                                                    //
     private String asunto;
     private String contenido;
     private Contacto remitente;
@@ -28,5 +30,5 @@ public class Correo {
    public List<Contacto> getDestinatarios(){
     return destinatarios;
    }
-   
+//                            FIN DE ENCAPSULAMIENTO                                                         //   
 }

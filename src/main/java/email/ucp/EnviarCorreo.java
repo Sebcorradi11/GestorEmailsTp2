@@ -1,6 +1,5 @@
 package email.ucp;
-import java.util.List;
-import java.util.ArrayList;
+
 
 public class EnviarCorreo {
     public static void enviar(Correo correo, Buzon buzonRemitente, Buzon buzonDestinatario) {
