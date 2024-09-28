@@ -1,9 +1,9 @@
-c:\Users\Claudia Passaggio\Desktop\TP2-GESTOREMAL\src\main\java\email\ucp\Correo.java
-c:\Users\Claudia Passaggio\Desktop\TP2-GESTOREMAL\src\main\java\email\ucp\FiltroAsuntoContenido.java
-c:\Users\Claudia Passaggio\Desktop\TP2-GESTOREMAL\src\main\java\email\ucp\EnviarCorreo.java
-c:\Users\Claudia Passaggio\Desktop\TP2-GESTOREMAL\src\main\java\email\ucp\Buzon.java
-c:\Users\Claudia Passaggio\Desktop\TP2-GESTOREMAL\src\main\java\email\ucp\FiltroAsunto.java
-c:\Users\Claudia Passaggio\Desktop\TP2-GESTOREMAL\src\main\java\email\ucp\FiltroContenido.java
-c:\Users\Claudia Passaggio\Desktop\TP2-GESTOREMAL\src\main\java\email\ucp\FiltroRemitente.java
-c:\Users\Claudia Passaggio\Desktop\TP2-GESTOREMAL\src\main\java\email\ucp\Contacto.java
-c:\Users\Claudia Passaggio\Desktop\TP2-GESTOREMAL\src\main\java\email\ucp\FiltroAsuntoRemitente.java
+C:\Users\Sebastiano\GestorEmailsTp2\src\main\java\email\ucp\FiltroDestinatario.java
+C:\Users\Sebastiano\GestorEmailsTp2\src\main\java\email\ucp\Buzon.java
+C:\Users\Sebastiano\GestorEmailsTp2\src\main\java\email\ucp\Correo.java
+C:\Users\Sebastiano\GestorEmailsTp2\src\main\java\email\ucp\FiltroAsuntoRemitente.java
+C:\Users\Sebastiano\GestorEmailsTp2\src\main\java\email\ucp\Contacto.java
+C:\Users\Sebastiano\GestorEmailsTp2\src\main\java\email\ucp\Filtro.java
+C:\Users\Sebastiano\GestorEmailsTp2\src\main\java\email\ucp\FiltroAsunto.java
+C:\Users\Sebastiano\GestorEmailsTp2\src\main\java\email\ucp\FiltroContenido.java
+C:\Users\Sebastiano\GestorEmailsTp2\src\main\java\email\ucp\EnviarCorreo.java

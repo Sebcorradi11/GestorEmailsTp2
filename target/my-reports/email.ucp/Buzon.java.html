@@ -4,30 +4,36 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Buzon {
-    private List &lt;Correo&gt; bandejaEntrada;
-    private List &lt;Correo&gt; bandejaEnviados;
+    private List&lt;Correo&gt; bandejaEntrada;
+    private List&lt;Correo&gt; bandejaEnviados;
 
-<span class="fc" id="L10">    public Buzon (){</span>
+<span class="fc" id="L10">    public Buzon() {</span>
 <span class="fc" id="L11">        bandejaEntrada = new ArrayList&lt;&gt;();</span>
 <span class="fc" id="L12">        bandejaEnviados = new ArrayList&lt;&gt;();</span>
 <span class="fc" id="L13">    }</span>
-    public void agregarAEntrada(Correo correo){
-<span class="fc" id="L15">        bandejaEntrada.add(correo);</span>
-<span class="fc" id="L16">    }</span>
-    public void agregarAEnviados(Correo correo){
-<span class="fc" id="L18">        bandejaEnviados.add(correo);</span>
-<span class="fc" id="L19">    }</span>
-    public void eliminarDeEnviados (Correo correo){
-<span class="fc" id="L21">        bandejaEnviados.remove(correo);</span>
-<span class="fc" id="L22">    }</span>
-    public void eliminarDeEntrada (Correo correo){
-<span class="fc" id="L24">        bandejaEntrada.remove(correo);</span>
+
+    public void agregarAEntrada(Correo correo) {
+<span class="fc" id="L16">        bandejaEntrada.add(correo);</span>
+<span class="fc" id="L17">    }</span>
+
+    public void agregarAEnviados(Correo correo) {
+<span class="fc" id="L20">        bandejaEnviados.add(correo);</span>
+<span class="fc" id="L21">    }</span>
+
+    public void eliminarDeEnviados(Correo correo) {
+<span class="fc" id="L24">        bandejaEnviados.remove(correo);</span>
 <span class="fc" id="L25">    }</span>
-    public List&lt;Correo&gt; getBandejaEntrada(){
-<span class="fc" id="L27">        return bandejaEntrada;</span>
+
+    public void eliminarDeEntrada(Correo correo) {
+<span class="fc" id="L28">        bandejaEntrada.remove(correo);</span>
+<span class="fc" id="L29">    }</span>
+
+    public List&lt;Correo&gt; getBandejaEntrada() {
+<span class="fc" id="L32">        return bandejaEntrada;</span>
     }
-    public List&lt;Correo&gt; getBandejaEnviados(){
-<span class="fc" id="L30">        return bandejaEnviados;</span>
+
+    public List&lt;Correo&gt; getBandejaEnviados() {
+<span class="fc" id="L36">        return bandejaEnviados;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.9.202303310957</span></div></body></html>
