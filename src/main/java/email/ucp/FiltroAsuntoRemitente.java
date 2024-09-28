@@ -2,7 +2,7 @@ package email.ucp;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class FiltroAsuntoRemitente {
+public class FiltroAsuntoRemitente implements Filtro {
     private String asunto;
     private Contacto remitente;
 
@@ -11,6 +11,7 @@ public class FiltroAsuntoRemitente {
         this.remitente = remitente;
     }
 
+    @Override
     public List<Correo> filtrar(List<Correo> correos) {
         return correos.stream()
             .filter(correo -> correo.getAsunto().contains(asunto) && correo.getRemitente().equals(remitente))

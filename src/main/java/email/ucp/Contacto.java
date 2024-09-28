@@ -1,37 +1,37 @@
 package email.ucp;
 
 public class Contacto {
-    public Contacto(String name, String mail) {
-        super();
-        setNombre(name);
-        setMail(mail);
-    }
-
-    String name;
-    String mail;
+    private String nombre;
+    private String mail;
     private Buzon buzon;
 
-    //                  ENCAPSULACION                        //
-    public void setNombre(String name) {
-        this.name = name;
+    public Contacto(String nombre, String mail) {
+        this.nombre = nombre;
+        this.mail = mail;
     }
 
+    // Métodos de encapsulamiento
     public String getNombre() {
-        return name;
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getMail() {
+        return mail;
     }
 
     public void setMail(String mail) {
         this.mail = mail;
     }
 
-    public String getMail() {
-        return mail;
-    }
     public Buzon getBuzon() {
         return buzon;
     }
-    public void setBuzon (Buzon buzon){
+
+    public void setBuzon(Buzon buzon) {
         this.buzon = buzon;
     }
-    //                FIN DE ENCAPSULAMIENTO             //
 }

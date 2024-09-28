@@ -1,21 +1,20 @@
 package email.ucp;
 
 
+import java.util.List;
+
 public class EnviarCorreo {
-    public static void enviar(Correo correo, Buzon buzonRemitente, Buzon buzonDestinatario) {
-        if (correo == null || buzonRemitente == null || buzonDestinatario == null) {
-            throw new IllegalArgumentException("Correo, buzonRemitente y buzonDestinatario no pueden ser nulos.");
+    public static void enviar(Correo correo, Buzon buzonRemitente, List<Buzon> buzonesDestinatarios) {
+        if (correo == null || buzonRemitente == null || buzonesDestinatarios == null) {
+            throw new IllegalArgumentException("El correo, buzonRemitente y buzonesDestinatarios no pueden ser nulos.");
         }
 
-        // Verificar que el correo esté en la bandeja de enviados del remitente
-        if (!buzonRemitente.getBandejaEnviados().contains(correo)) {
-            throw new IllegalArgumentException("El correo no está en la bandeja de enviados del buzonRemitente.");
+        // Agregar el correo a la bandeja de enviados del remitente
+        buzonRemitente.agregarAEnviados(correo);
+
+        // Agregar el correo a la bandeja de entrada de cada destinatario
+        for (Buzon buzon : buzonesDestinatarios) {
+            buzon.agregarAEntrada(correo);
         }
-
-        // Agregar el correo a la bandeja de entrada del destinatario
-        buzonDestinatario.agregarAEntrada(correo);
-
-        // Eliminar el correo de la bandeja de enviados del remitente
-        buzonRemitente.eliminarDeEnviados(correo);
     }
 }
